@@ -25,7 +25,7 @@ Function.prototype.clone = function() {
 				// initiate negative padding
 				//console.log(this);
 				//console.log(arguments);
-				this.html("<div style='position:relative;left:" + arguments[0].padding + ";top:" + arguments[0].padding + ';width:' + (this.width() + arguments[0].padding.replace("px","") * -2) + 'px;background:transparent;\'>' + this.html() + "</div>" );
+				this.html("<div style='position:relative;left:" + arguments[0].padding + ";top:" + arguments[0].padding + ';width:' + (this.width() + arguments[0].padding.replace("px","") * -2) + 'px;height:' + (this.height() + arguments[0].padding.replace("px","") * -2) + 'px;background:transparent;\'>' + this.html() + "</div>" );
 				arguments.padding = "";
 				return $.fn.oldcss.apply(this, arguments);
 			}
