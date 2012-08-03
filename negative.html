@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="essentialjQueryPlugin.js"></script>
+		<script type="text/javascript">
+$(document).ready(function(){
+	$("#positor").css({ "padding": "20px" });
+	$("#negator").css({ "padding": "-20px" });
+});
+		</script>
+		<style type="text/css">
+html, body{
+	font-family: arial;
+	padding: 40px;
+}
+div{
+	background-color: lightblue;
+	width: 400px;
+}
+		</style>
+	</head>
+	<body>
+		<div id="control">
+			<h3>Control Div</h3>
+			<p>No padding for me!</p>
+			<p>Compare to other two.</p>
+		</div>
+		<br/>
+		<br/>
+		<div id="positor">
+			<h3>Positive Div</h3>
+			<p>Positive padding for me!</p>
+			<p>Compare to other two.</p>
+		</div>
+		<br/>
+		<br/>
+		<div id="negator">
+			<h3>Negative Div</h3>
+			<p>Negative padding for me!</p>
+			<p>That's right, I just added negative padding to a div. No one can stop me!</p>
+			<p>Compare to other two.</p>
+		</div>
+	</body>
+</html>
